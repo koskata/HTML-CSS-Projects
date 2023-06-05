@@ -1,0 +1,285 @@
+@import 'https://use.fontawesome.com/releases/v5.6.3/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content:flex-start;
+}
+
+.logo{
+    width: 4.2em;
+}
+
+.shadow{
+    text-shadow: 1.2px 1.2px rgb(108, 108, 108);
+}
+
+.mainHeader{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-evenly;
+    align-items:center;
+    color: rgb(108, 108, 108);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.logoTitle{
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5em;
+    font-size: 1.5em;
+
+}
+
+
+
+nav ul a{
+    text-decoration: none;
+    color: rgb(108, 108, 108);
+    height: 2.8em;
+    padding-top: 0.6em;
+    font-weight: 600;
+    display: block;
+}
+
+.li{
+    width: 6em;
+    text-align: center;
+}
+
+ nav ul li:hover{
+    background-color: rgb(238, 238, 238);
+ }
+
+ nav ul li a:hover{
+    color: #1967D2;
+ }
+
+ .notice{
+    background-color:#e8f0fe;
+    width: 105em;
+    padding: 2em;
+    border-radius: 0.5em;
+    font-family: Open Sans, sans-serif;
+    display: flex;
+    height: 6.3em;
+    align-items: center;    
+    color: #3c4043;
+    line-height: 1.5;
+ }
+
+ .notice h4{
+    padding-top: 2em;
+ }
+
+.cancelMenu{
+    display: flex;
+    float: right;
+    gap: 2em;
+    margin-bottom: 1.2em;
+    color: #1967D2;
+    font-weight: 600;
+}
+
+.cancelMenu p:hover{
+    border-radius: 0.3em;
+    background-color: rgba(26,115,232,.09);
+    cursor: pointer;
+}
+
+.cancelMenu p{
+    height: 2em;
+    padding: 0.2em;
+}
+
+
+
+ .notice svg{
+    flex: 1 1 10%;
+ }
+
+ .notice div{
+    flex: 1 0 90%;
+ }
+
+ svg{
+    width: 20em;
+ }
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    align-items: center;
+}
+
+.searchbar{
+    margin-top: 0.8em;
+    display: flex;
+    font-size: 1.5em;
+    width: 64em;
+    border: 1px solid rgb(108, 108, 108);
+    height: 2.4em;
+    align-items: center;
+    border-radius: 2em;
+}
+
+.search{
+    border: 2px solid rgb(108, 108, 108);
+    padding: 0.8em;
+    height: 100%;
+    border-left: 0;
+    border-top: 1px;
+    border-bottom: 1px;
+    width: 24em;
+    border-radius: 2em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 2em;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.search.a{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 1.2em;
+}
+
+.choice{
+    height: 70%;
+    border: 0;
+    font-weight: 900;
+}
+
+.choice:hover{
+    background-color: rgba(26,115,232,.09);
+    border-radius: 0.3em;
+    color: #1967D2;
+}
+
+.range{
+    width: 40%;
+    margin-right: 5em;
+}
+
+
+.firstSection{
+    margin-top: 5em;
+    display: flex;
+    gap: 2em;
+}
+
+.firstSection article{
+    width: 30em;
+    height: 30em;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 0.7em;
+}
+
+.firstSection .roboto:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+}
+
+.firstSection .roboto{
+    padding: 1.1em;
+    line-height: 1.5;
+}
+
+.firstSection header{
+    font-family: Sans, BlinkMacSystemFont, sans-serif;
+    font-size: 1em;
+}
+
+.firstSection header h3{
+    font-weight: normal;
+}
+
+.firstSection header p{
+    color: rgb(108, 108, 108);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.firstSection .roboto .right{
+    float: right;
+}
+
+.fonted{
+    margin-top: 0.4em;
+    font-family: Roboto;
+    font-size: 2.5em;
+}
+
+
+
+.firstSection .YujiHentaiganaAkari:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+}
+
+.firstSection .YujiHentaiganaAkari .right{
+    float: right;
+}
+
+.firstSection .YujiHentaiganaAkari{
+    padding: 1.1em;
+    line-height: 1.5;
+}
+
+.fonted.y{
+    font-family: Yuji Hentaigana Akari;
+}
+
+
+
+.firstSection .Geologica:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+}
+
+.firstSection .Geologica .right{
+    float: right;
+}
+
+.firstSection .Geologica{
+    padding: 1.1em;
+    line-height: 1.5;
+}
+
+.fonted.g{
+    font-family: Geologica;
+}
+
+
+ footer{
+    padding: 2.0em;
+    height: 0.3em;
+    text-align: center;
+    margin-top: auto;
+    background-color: beige;
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+ 
