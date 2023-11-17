@@ -86,8 +86,57 @@ html{
 
 /* Nav */
 
+<<<<<<< HEAD
 .btn:hover{
     background-color: #F1F1F1;
+=======
+.btn {
+    background-color: var(--background-color);
+    
+    padding: .5em 1em;
+    
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    --background-color: white;
+    --border-size: 2px;
+    --accent-color:#F3F5FA;
+    
+  }
+
+  .btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 0.3em;
+    border: 1px solid black;
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+    border-radius: 0.3em;
+  }
+  
+  .btn.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+  }
+  
+  
+  .btn.btn-background-slide:hover,
+  .btn.btn-background-slide:focus {
+>>>>>>> 30fe59c8628cf908d75e14d410bd2a175b1cac19
     border-radius: 0.3em;
   }
 
